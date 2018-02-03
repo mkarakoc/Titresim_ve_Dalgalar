@@ -3,5 +3,5 @@
 Titreşim ve Dalgalar Dersi, Ders Notları
 
 Aşağıdaki **Binder** butonundan ders notlarına ulaşılabilir.
-[![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/mkarakoc/Titresim_ve_Dalgalar/master)
 
+[![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/mkarakoc/Titresim_ve_Dalgalar/master)
