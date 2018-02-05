@@ -8,7 +8,7 @@ Aşağıdaki **Binder** butonundan ders notlarına ulaşılabilir.
 
 [//]: # (Resim aşağıdaki linkten alınmıştır.)
 [//]: # (https://upload.wikimedia.org/wikipedia/commons/1/1e/2010_mavericks_competition.jpg)
-<img width=400 src='./sekiller/2010_mavericks_competition.jpg'>
+<img width=400 src='./dersnotlari/sekiller/2010_mavericks_competition.jpg'>
 
 # Jupyter Notebook Server
 
