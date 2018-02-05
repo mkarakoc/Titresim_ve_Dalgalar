@@ -169,9 +169,9 @@ RUN \
   && jupyter nbextension enable toggle_all_line_numbers/main 
   
 # enable spesific nbextension from start
-RUN \
-     cd /home/main/dersnotlari  \
-  && jupyter trust *.ipynb 
+#RUN \
+#     cd /home/main/dersnotlari  \
+#  && jupyter trust *.ipynb 
      
      
    
