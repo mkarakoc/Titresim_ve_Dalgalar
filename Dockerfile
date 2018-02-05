@@ -147,7 +147,7 @@ RUN cp -rf \
 USER main
 ###################
 
-WORKDIR /home/main
+WORKDIR /home/main/dersnotlari
 
 # jupyter nbextensions (enable)
 RUN jupyter-nbextensions_configurator enable --user
@@ -167,3 +167,11 @@ RUN \
   && jupyter nbextension enable hide_input/main \   
   && jupyter nbextension enable runtools/main \   
   && jupyter nbextension enable toggle_all_line_numbers/main 
+  
+# enable spesific nbextension from start
+RUN \
+     cd /home/main/dersnotlari  \
+  && jupyter trust *.ipynb 
+     
+     
+   
