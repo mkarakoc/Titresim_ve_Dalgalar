@@ -147,7 +147,7 @@ RUN cp -rf \
 USER main
 ###################
 
-WORKDIR /home/main/dersnotlari
+WORKDIR /home/main
 
 # jupyter nbextensions (enable)
 RUN jupyter-nbextensions_configurator enable --user
