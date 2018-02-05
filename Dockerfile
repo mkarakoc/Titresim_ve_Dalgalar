@@ -89,6 +89,10 @@ RUN sudo /home/main/anaconda2/envs/python3/bin/pip install plotly
 RUN sudo /home/main/anaconda2/bin/pip install symengine
 RUN sudo /home/main/anaconda2/envs/python3/bin/pip install symengine
 
+# ipywidgets python 2 and 3
+RUN sudo /home/main/anaconda2/bin/pip install --upgrade ipywidgets
+RUN sudo /home/main/anaconda2/envs/python3/bin/pip install --upgrade ipywidgets
+
 # jupyter notebook
 RUN jupyter notebook --generate-config
 ADD jupyter_notebook_config.py jupyter_notebook_config.py
@@ -126,5 +130,6 @@ RUN \
   && jupyter nbextension enable execute_time/ExecuteTime \   
   && jupyter nbextension enable hide_input/main \   
   && jupyter nbextension enable runtools/main \   
-  && jupyter nbextension enable toggle_all_line_numbers/main  
+  && jupyter nbextension enable toggle_all_line_numbers/main \
+  && jupyter nbextension enable --py widgetsnbextension
   
