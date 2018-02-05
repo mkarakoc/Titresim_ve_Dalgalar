@@ -117,6 +117,7 @@ RUN \
  && rm -rf /home/main/Titresim_ve_Dalgalar \
  && jupyter trust /home/main/dersnotlari/*.ipynb
 <<<<<<< HEAD
+<<<<<<< HEAD
  
 =======
 
@@ -127,3 +128,5 @@ RUN \
      
      
 >>>>>>> 82490554c75d39dec7a1d2a5a3aa9a6d21e56ae6
+=======
+>>>>>>> ac5a3ad485d9182309fa89f219702d627d1a4644
