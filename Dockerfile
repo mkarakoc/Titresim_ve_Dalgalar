@@ -91,7 +91,7 @@ RUN sudo /home/main/anaconda2/envs/python3/bin/pip install symengine
 
 # ipywidgets python 2 and 3
 RUN sudo /home/main/anaconda2/bin/pip install --upgrade ipywidgets
-RUN sudo /home/main/anaconda2/envs/python3/bin/pip install --upgrade ipywidgets
+RUN sudo /home/main/anaconda2/envs/python3/bin/pip install ipywidgets
 
 # jupyter notebook
 RUN jupyter notebook --generate-config
