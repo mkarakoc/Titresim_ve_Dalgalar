@@ -108,8 +108,8 @@ RUN \
 RUN \
      git clone https://github.com/mkarakoc/Titresim_ve_Dalgalar.git \
   && mv /home/main/Titresim_ve_Dalgalar/dersnotu /home/main \
-  && rm -rf /home/main/Titresim_ve_Dalgalar \
-  && jupyter trust /home/main/dersnotu/*.ipynb
+  && rm -rf /home/main/Titresim_ve_Dalgalar 
+#  && jupyter trust /home/main/dersnotu/*.ipynb
 
 # trust
 #RUN \
