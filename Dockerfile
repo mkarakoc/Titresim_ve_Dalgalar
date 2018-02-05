@@ -106,10 +106,10 @@ RUN \
   && jupyter nbextension enable toggle_all_line_numbers/main 
   
 RUN \
-     git clone https://github.com/mkarakoc/Titresim_ve_Dalgalar.git 
-# && mv /home/main/Titresim_ve_Dalgalar/dersnotu /home/main \
-#  && rm -rf /home/main/Titresim_ve_Dalgalar 
-#  && jupyter trust /home/main/dersnotu/*.ipynb
+     git clone https://github.com/mkarakoc/Titresim_ve_Dalgalar.git \
+ && mv /home/main/Titresim_ve_Dalgalar/dersnotlari /home/main \
+ && rm -rf /home/main/Titresim_ve_Dalgalar \
+ && jupyter trust /home/main/dersnotlari/*.ipynb
 
 # trust
 #RUN \
