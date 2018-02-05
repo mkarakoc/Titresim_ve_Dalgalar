@@ -105,12 +105,25 @@ RUN \
   && jupyter nbextension enable runtools/main \   
   && jupyter nbextension enable toggle_all_line_numbers/main 
   
+<<<<<<< HEAD
 # clone Titresim_ve_Dalgalar itself
 # then move dersnotlari to main folder
 # then make .ipynb files trusted
+=======
+>>>>>>> 82490554c75d39dec7a1d2a5a3aa9a6d21e56ae6
 RUN \
      git clone https://github.com/mkarakoc/Titresim_ve_Dalgalar.git \
  && mv /home/main/Titresim_ve_Dalgalar/dersnotlari /home/main \
  && rm -rf /home/main/Titresim_ve_Dalgalar \
  && jupyter trust /home/main/dersnotlari/*.ipynb
+<<<<<<< HEAD
  
+=======
+
+# trust
+#RUN \
+#     cd /home/main/dersnotlari  \
+#  && jupyter trust *.ipynb 
+     
+     
+>>>>>>> 82490554c75d39dec7a1d2a5a3aa9a6d21e56ae6
