@@ -110,10 +110,3 @@ RUN \
  && mv /home/main/Titresim_ve_Dalgalar/dersnotlari /home/main \
  && rm -rf /home/main/Titresim_ve_Dalgalar \
  && jupyter trust /home/main/dersnotlari/*.ipynb
-
-# trust
-#RUN \
-#     cd /home/main/dersnotlari  \
-#  && jupyter trust *.ipynb 
-     
-     
