@@ -133,5 +133,5 @@ RUN \
   && jupyter nbextension enable hide_input/main \   
   && jupyter nbextension enable runtools/main \   
   && jupyter nbextension enable toggle_all_line_numbers/main \
-  && jupyter nbextension enable --py widgetsnbextension
+  && jupyter nbextension enable jupyter-js-widgets/extension
   
