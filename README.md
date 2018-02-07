@@ -2,13 +2,18 @@
 
 Titreşim ve Dalgalar Dersi, Ders Notları
 
-Aşağıdaki **Binder** butonundan ders notlarına ulaşılabilir.
+Aşağıdaki **nbviewer** butonundan ders notlarının **Jupyter Notebook** dosyalarının statik hallerine ulaşılabilir.
+
+[![](https://nbviewer.jupyter.org/static/img/nav_logo.svg)](https://nbviewer.jupyter.org/github/mkarakoc/Titresim_ve_Dalgalar/tree/master/dersnotlari/)
+
+Aşağıdaki **Binder** butonundan ders notlarının **Jupyter Notebook** dosyalarının etkileşimli hallerine ulaşılabilir. Malesef bu linkin açılması uzun sürebilir.
 
 [![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/mkarakoc/Titresim_ve_Dalgalar/master)
 
 [//]: # (Resim aşağıdaki linkten alınmıştır.)
 [//]: # (https://upload.wikimedia.org/wikipedia/commons/1/1e/2010_mavericks_competition.jpg)
 <img width=400 src='./dersnotlari/sekiller/2010_mavericks_competition.jpg'>
+
 
 # Jupyter Notebook Server
 
