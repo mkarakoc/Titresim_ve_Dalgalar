@@ -2,7 +2,7 @@
 
 Titreşim ve Dalgalar Dersi, Ders Notları
 
-Aşağıdaki **nbviewer** butonundan ders notlarının **Jupyter Notebook** dosyalarının statik hallerine ulaşılabilir.
+Aşağıdaki **nbviewer** logosuna tıklayarak ders notlarının **Jupyter Notebook** dosyalarının statik hallerine ulaşılabilir.
 
 [<img width=200 src='https://nbviewer.jupyter.org/static/img/nav_logo.svg'>](https://nbviewer.jupyter.org/github/mkarakoc/Titresim_ve_Dalgalar/tree/master/dersnotlari/)
 
