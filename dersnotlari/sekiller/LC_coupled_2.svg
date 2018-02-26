@@ -12,7 +12,7 @@
    version="1.1"
    id="svg3787"
    inkscape:version="0.48.4 r9939"
-   sodipodi:docname="LC_coupled.svg">
+   sodipodi:docname="LC_coupled_2.svg">
   <sodipodi:namedview
      pagecolor="#ffffff"
      bordercolor="#666666"
@@ -29,10 +29,10 @@
      inkscape:zoom="3.5355339"
      inkscape:cx="116.64266"
      inkscape:cy="90.181291"
-     inkscape:window-x="0"
-     inkscape:window-y="23"
+     inkscape:window-x="8"
+     inkscape:window-y="31"
      inkscape:window-maximized="0"
-     inkscape:current-layer="g11579"
+     inkscape:current-layer="g9806"
      borderlayer="false"
      height="219px"
      fit-margin-top="0"
@@ -47,7 +47,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -542,7 +542,7 @@
             </g>
             <g
                id="g10535"
-               transform="translate(0,136.7642)">
+               transform="matrix(-1,0,0,1,357.41129,136.7642)">
               <text
                  xml:space="preserve"
                  style="font-size:55.82210922px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
@@ -571,7 +571,7 @@
                    style="font-size:18.14218521px;font-weight:bold;-inkscape-font-specification:Sans Bold">-</tspan></text>
             </g>
             <g
-               transform="translate(0,295.85746)"
+               transform="matrix(-1,0,0,1,357.41129,295.85746)"
                id="g10545">
               <text
                  transform="matrix(0,1,1,0,0,0)"
