@@ -29,8 +29,8 @@
      inkscape:zoom="3.5355339"
      inkscape:cx="116.64266"
      inkscape:cy="90.181291"
-     inkscape:window-x="8"
-     inkscape:window-y="31"
+     inkscape:window-x="1920"
+     inkscape:window-y="23"
      inkscape:window-maximized="0"
      inkscape:current-layer="g9806"
      borderlayer="false"
@@ -79,6 +79,20 @@
          d="M 0,0 5,-5 -12.5,0 5,5 0,0 z"
          style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt"
          transform="matrix(-0.8,0,0,-0.8,-10,0)"
+         inkscape:connector-curvature="0" />
+    </marker>
+    <marker
+       inkscape:stockid="TriangleOutL"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="TriangleOutL-5"
+       style="overflow:visible">
+      <path
+         id="path10703-3"
+         d="m 5.77,0 -8.65,5 0,-10 8.65,5 z"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt"
+         transform="scale(0.8,0.8)"
          inkscape:connector-curvature="0" />
     </marker>
   </defs>
@@ -410,7 +424,7 @@
                    y="223.34062"
                    x="56.212868"
                    id="tspan10441"
-                   sodipodi:role="line">1</tspan></text>
+                   sodipodi:role="line">a</tspan></text>
             </g>
             <text
                xml:space="preserve"
@@ -479,7 +493,7 @@
                    id="tspan10492"
                    x="56.212868"
                    y="223.34062"
-                   style="font-size:19.53773689px;font-weight:bold;-inkscape-font-specification:Sans Bold">2</tspan></text>
+                   style="font-size:19.53773689px;font-weight:bold;-inkscape-font-specification:Sans Bold">b</tspan></text>
             </g>
             <g
                transform="translate(0,242.82635)"
@@ -509,7 +523,7 @@
                    y="223.34062"
                    x="56.212868"
                    id="tspan10502"
-                   sodipodi:role="line">3</tspan></text>
+                   sodipodi:role="line">c</tspan></text>
             </g>
             <g
                id="g10529">
@@ -664,8 +678,39 @@
                    y="223.34062"
                    x="190.186"
                    id="tspan11595"
+                   sodipodi:role="line">c</tspan></text>
+              <text
+                 sodipodi:linespacing="125%"
+                 id="text11589-3"
+                 y="272.29077"
+                 x="89.911446"
+                 style="font-size:55.82211304px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+                 xml:space="preserve"
+                 transform="matrix(0,1,1,0,0,0)"><tspan
+                   style="font-size:25.11995125px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:MathJax_Math;-inkscape-font-specification:MathJax_Math"
+                   y="272.29077"
+                   x="89.911446"
+                   id="tspan11591-4"
+                   sodipodi:role="line">I</tspan></text>
+              <text
+                 sodipodi:linespacing="125%"
+                 id="text11593-2"
+                 y="278.94495"
+                 x="99.69532"
+                 style="font-size:55.82211304px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+                 xml:space="preserve"
+                 transform="matrix(0,1,1,0,0,0)"><tspan
+                   style="font-size:19.53773689px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:MathJax_Math;-inkscape-font-specification:MathJax_Math Bold"
+                   y="278.94495"
+                   x="99.69532"
+                   id="tspan11595-4"
                    sodipodi:role="line">b</tspan></text>
             </g>
+            <path
+               inkscape:connector-curvature="0"
+               id="path11577-8"
+               d="m 109.49507,165.71806 43.86679,-0.40191"
+               style="fill:none;stroke:#000000;stroke-width:1.19239104px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#TriangleOutL)" />
           </g>
         </g>
       </g>
