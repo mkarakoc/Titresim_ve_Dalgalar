@@ -14,6 +14,10 @@ import scipy
 from scipy.io import wavfile
 import datetime as dt
 
+# matplotlib.colors
+# https://matplotlib.org/api/colors_api.html
+plt_colors =  ('b', 'g', 'r', 'c', 'm', 'y', 'k', 'w')
+
 params = {
    'axes.titlesize': 24,
    'axes.labelsize': 18,
