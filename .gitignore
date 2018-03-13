@@ -1,4 +1,8 @@
-.ipynb_checkpoints
+!/.gitignore
 
 .*
-!/.gitignore
+
+.ipynb_checkpoints
+
+.pyc
+
