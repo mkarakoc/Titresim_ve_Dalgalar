@@ -73,3 +73,8 @@ def wavPlayer(filepath):
     </body>
     """%(filepath, filepath)
     display(HTML(src))
+
+# sympy ifadelerini yazdırmak için
+symPrint = lambda s: display(Markdown('$%s$'%sym.latex(s)))
+
+symPrintEq = lambda s1, s2: display(Markdown('$%s = %s$'%(sym.latex(s1), sym.latex(s2))))
