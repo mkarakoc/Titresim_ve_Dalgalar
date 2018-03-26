@@ -74,7 +74,20 @@ def wavPlayer(filepath):
     """%(filepath, filepath)
     display(HTML(src))
 
-# sympy ifadelerini yazdırmak için
-symPrint = lambda s: display(Markdown('$%s$'%sym.latex(s)))
+# LaTeX ifadelerini yazdırmak için
+def prinTeX(text, label=ur'', number=ur'\nonumber'):
+    if label==ur'': label = ur'label' + str(np.random.random()).replace('.','')
+    MarkdownText = \
+    ur"""\begin{{align}}
+         \label{{{label}}}
+         {text} {number}
+         \end{{align}}
+    """.format(text = text, label=label, number=number)
+    display(Markdown(MarkdownText))
 
-symPrintEq = lambda s1, s2: display(Markdown('$%s = %s$'%(sym.latex(s1), sym.latex(s2))))
+# sympy ifadelerini yazdırmak için
+def printS(sympyObj, formatS=ur'{} = {}', label=ur'', number=ur'\nonumber'):
+    sympyObjLatex = tuple([sym.latex(s) for s in sympyObj])
+    prinTeX(formatS.format(*sympyObjLatex), number=number)
+    
+
