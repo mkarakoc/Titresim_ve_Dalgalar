@@ -88,6 +88,6 @@ def prinTeX(text, label=ur'', number=ur'\nonumber'):
 # sympy ifadelerini yazdırmak için
 def printS(sympyObj, formatS=ur'{} = {}', label=ur'', number=ur'\nonumber'):
     sympyObjLatex = tuple([sym.latex(s) for s in sympyObj])
+    if len(sympyObjLatex)==1: formatS = ur'{}'
     prinTeX(formatS.format(*sympyObjLatex), number=number)
     
-
