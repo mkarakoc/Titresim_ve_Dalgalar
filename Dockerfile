@@ -1,4 +1,5 @@
-FROM ubuntu:16.04
+#FROM ubuntu:16.04
+FROM ubuntu:bionic
 
 MAINTAINER Mesut Karakoç <mesudkarakoc@gmail.com>
 #https://github.com/jupyter/docker-stacks/blob/master/base-notebook/Dockerfile
