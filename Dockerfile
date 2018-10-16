@@ -1,121 +1,30 @@
-FROM ubuntu:16.04
-#FROM ubuntu:bionic
+# link of the Docker container
+# https://hub.docker.com/r/hesap/aimpy/tags/
+FROM hesap/aimpy:jovyan_stable_latest_20180815_1213
 
 MAINTAINER Mesut Karakoç <mesudkarakoc@gmail.com>
-#https://github.com/jupyter/docker-stacks/blob/master/base-notebook/Dockerfile
 
-###################
+# becom root to change jovyan password
 USER root
-###################
 
-# See https://github.com/sagemathinc/cocalc/issues/921
-ENV LC_ALL C.UTF-8
-ENV LANG en_US.UTF-8
-ENV LANGUAGE en_US:en
-ENV TERM screen
+### password of main user is Docker!
+### REF: https://stackoverflow.com/questions/28721699/root-password-inside-a-docker-container
+RUN echo "jovyan:Docker!" | chpasswd
 
-# So we can source (see http://goo.gl/oBPi5G)
-#RUN rm /bin/sh && ln -s /bin/bash /bin/sh
+# jovyan user name somehow chosen by someone that i do not know, yet. kind of forced to use!
+# REF: https://mybinder.readthedocs.io/en/latest/dockerfile.html#preparing-your-dockerfile
+USER jovyan
 
-# Ubuntu softwares
-RUN \
-     apt-get update \
-  && apt-get install -y \
-       software-properties-common \
-       wget \
-       git \
-       python \
-       python-pip \
-       make \
-       g++ \
-       sudo \
-       subversion \
-       ssh \
-       m4 \
-       libpq5 \
-       libpq-dev \
-       build-essential \
-       gfortran \
-       automake \
-       dpkg-dev \
-       libssl-dev \
-       imagemagick \
-       libcairo2-dev \
-       libcurl4-openssl-dev \
-       graphviz \
-       smem \
-       python3-yaml \
-       locales \
-       locales-all
+# create flint and arb path for the container when it used by mybinder.org
+# some how mybinder.org does not see .bashrc or .profile files
+ENV LD_LIBRARY_PATH "${LD_LIBRARY_PATH}:/home/jovyan/pylibs/flint2:/home/jovyan/pylibs/arb"
 
-## create password-less user
-RUN useradd -m main && echo "main:main" | chpasswd && adduser main sudo
-RUN echo "main:main" | chpasswd && adduser main sudo
+# force the container to use bash
+# REF: https://stackoverflow.com/questions/33467098/how-can-the-terminal-in-jupyter-automatically-run-bash-instead-of-sh
+ENV SHELL "/bin/bash"
 
-#### without password
-RUN passwd --delete main
+# working directory
+WORKDIR /home/jovyan
 
-#### MAIN USER ####
-USER main
-###################
+ADD ./dersnotlari /home/jovyan/dersnotlari
 
-# Jupyter from pip (since apt-get jupyter is ancient)
-RUN \
-  sudo pip install "ipython<6" jupyter
-
-RUN jupyter notebook --generate-config
-ADD jupyter_notebook_config.py jupyter_notebook_config.py
-RUN cp jupyter_notebook_config.py /home/main/.jupyter/
-
-# Some extra libs
-RUN sudo pip install plotly
-RUN sudo pip install sympy
-RUN sudo pip install scipy
-
-# jupyter nbextensions (enable)
-RUN sudo pip install jupyter_contrib_nbextensions
-RUN sudo pip install jupyter_nbextensions_configurator
-
-RUN git clone \
-               https://github.com/ipython-contrib/jupyter_contrib_nbextensions \
-               /home/main/jupyter_contrib_nbextensions
-RUN mkdir /home/main/.ipython
-
-RUN cp -rf \
-            /home/main/jupyter_contrib_nbextensions/src/jupyter_contrib_nbextensions/nbextensions/ \
-            /home/main/.ipython/
-
-#### MAIN USER ####
-USER main
-###################
-
-WORKDIR /home/main
-
-# jupyter nbextensions (enable)
-RUN jupyter-nbextensions_configurator enable --user
-
-# enable spesific nbextension from start
-RUN \
-     jupyter nbextension enable hide_input_all/main \
-  && jupyter nbextension enable livemdpreview/livemdpreview \
-  && jupyter nbextension enable rubberband/main \   
-  && jupyter nbextension enable toc2/main \   
-  && jupyter nbextension enable varInspector/main \   
-  && jupyter nbextension enable varInspector/main \   
-  && jupyter nbextension enable collapsible_headings/main \   
-  && jupyter nbextension enable hinterland/hinterland \   
-  && jupyter nbextension enable snippets_menu/main \   
-  && jupyter nbextension enable execute_time/ExecuteTime \   
-  && jupyter nbextension enable hide_input/main \   
-  && jupyter nbextension enable runtools/main \   
-  && jupyter nbextension enable toggle_all_line_numbers/main \
-  && jupyter nbextension enable equation-numbering/main
-  
-# clone Titresim_ve_Dalgalar itself
-# then move dersnotlari to main folder
-# then make .ipynb files trusted
-RUN \
-     git clone https://github.com/mkarakoc/Titresim_ve_Dalgalar.git \
- && mv /home/main/Titresim_ve_Dalgalar/dersnotlari /home/main \
- && rm -rf /home/main/Titresim_ve_Dalgalar \
- && jupyter trust /home/main/dersnotlari/*.ipynb
