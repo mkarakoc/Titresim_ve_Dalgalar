@@ -1,6 +1,6 @@
 # link of the Docker container
 # https://hub.docker.com/r/hesap/aimpy/tags/
-FROM hesap/aimpy:jovyan_stable_latest_20180815_1213
+FROM hesap/aimpy:jovyan_stable_latest_20181016_1758
 
 MAINTAINER Mesut Karakoç <mesudkarakoc@gmail.com>
 
@@ -26,5 +26,9 @@ ENV SHELL "/bin/bash"
 # working directory
 WORKDIR /home/jovyan
 
+# add dersnotlari
 ADD ./dersnotlari /home/jovyan/dersnotlari
+
+# make jupyter notebooks are trusted
+RUN jupyter trust /home/jovyan/dersnotlari/*.ipynb
 
