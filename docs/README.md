@@ -2,23 +2,26 @@
 
 Titreşim ve Dalgalar Dersi, Ders Notları
 
-1. 01a_titresim_ve_dalgalar.html
-
 [//]: # (Resim aşağıdaki linkten alınmıştır.)
 [//]: # (https://upload.wikimedia.org/wikipedia/commons/1/1e/2010_mavericks_competition.jpg)
-<img width=400 src='./dersnotlari/sekiller/2010_mavericks_competition.jpg'>
+<img width=400 src='../dersnotlari/sekiller/2010_mavericks_competition.jpg'>
 
+## Ders notları
+1. [Bölüm 01a](01a_titresim_ve_dalgalar.html)
+
+## Statik dosyalar
 Aşağıdaki **nbviewer** logosuna tıklayarak ders notlarının **Jupyter Notebook** dosyalarının statik hallerine ulaşılabilir.
 
 [<img width=200 src='https://nbviewer.jupyter.org/static/img/nav_logo.svg'>](https://nbviewer.jupyter.org/github/mkarakoc/Titresim_ve_Dalgalar/tree/master/dersnotlari/)
 
+## Etkileşimli dosyalar
 Aşağıdaki **Binder** butonundan ders notlarının **Jupyter Notebook** dosyalarının etkileşimli hallerine ulaşılabilir. Malesef bu linkin açılması uzun sürebilir.
 
 [![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/mkarakoc/Titresim_ve_Dalgalar/master)
 
 
 
-# Jupyter Notebook Server
+## Jupyter Notebook Server
 
 Aşağıdaki yöntemle token alınıp bir başka tarayıcıda Jupter Notebook yeniden açılabilir.
 
