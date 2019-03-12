@@ -6,17 +6,22 @@ Titreşim ve Dalgalar Dersi, Ders Notları
 [//]: # (https://upload.wikimedia.org/wikipedia/commons/1/1e/2010_mavericks_competition.jpg)
 <img width=400 src='./dersnotlari/sekiller/2010_mavericks_competition.jpg'>
 
+## Titreşim ve Dalgalar Laboratuvar Dersi
+### [Deney Föyü](https://github.com/mkarakoc/Titresim_ve_Dalgalar/raw/master/pdfs/titresim_ve_dalgalar_lab_deney_foyu.pdf)
+
+## Statik dosyalar
 Aşağıdaki **nbviewer** logosuna tıklayarak ders notlarının **Jupyter Notebook** dosyalarının statik hallerine ulaşılabilir.
 
 [<img width=200 src='https://nbviewer.jupyter.org/static/img/nav_logo.svg'>](https://nbviewer.jupyter.org/github/mkarakoc/Titresim_ve_Dalgalar/tree/master/dersnotlari/)
 
+## Etkileşimli dosyalar
 Aşağıdaki **Binder** butonundan ders notlarının **Jupyter Notebook** dosyalarının etkileşimli hallerine ulaşılabilir. Malesef bu linkin açılması uzun sürebilir.
 
 [![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/mkarakoc/Titresim_ve_Dalgalar/master)
 
 
 
-# Jupyter Notebook Server
+## Jupyter Notebook Server
 
 Aşağıdaki yöntemle token alınıp bir başka tarayıcıda Jupter Notebook yeniden açılabilir.
 
