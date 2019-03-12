@@ -6,7 +6,7 @@ Titreşim ve Dalgalar Dersi, Ders Notları
 [//]: # (https://upload.wikimedia.org/wikipedia/commons/1/1e/2010_mavericks_competition.jpg)
 <img width=400 src='./dersnotlari/sekiller/2010_mavericks_competition.jpg'>
 
-## Titreşim ve Dalgalar Laboratuvar Dersi
+## Titreşim ve Dalgalar Laboratuvar Dersi / FİZ228
 ### [Deney Föyü](https://github.com/mkarakoc/Titresim_ve_Dalgalar/raw/master/pdfs/titresim_ve_dalgalar_lab_deney_foyu.pdf)
 
 ## Statik dosyalar
