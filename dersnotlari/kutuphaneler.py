@@ -69,7 +69,7 @@ def course_title():
     <font size="4" color="black"> 
     Akdeniz Üniversitesi, Fen Fakültesi, Fizik Bölümü 
     <br>    
-    2018 - 2019 Bahar Dönemi 
+    2019 - 2020 Bahar Dönemi 
     </font>
     <br>
     """
