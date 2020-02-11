@@ -18,7 +18,7 @@ Aşağıdaki **nbviewer** logosuna tıklayarak ders notlarının **Jupyter Noteb
 Aşağıdaki **Binder** butonundan ders notlarının **Jupyter Notebook** dosyalarının etkileşimli hallerine ulaşılabilir. Malesef bu linkin açılması uzun sürebilir.
 
 [![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/mkarakoc/Titresim_ve_Dalgalar/master)
-
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/mkarakoc/Titresim_ve_Dalgalar/master?urlpath=lab)
 
 
 ## Jupyter Notebook Server
