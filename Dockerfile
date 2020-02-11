@@ -8,9 +8,6 @@ MAINTAINER Mesut Karakoç <mesudkarakoc@gmail.com>
 # become root to change jovyan password
 USER root
 
-ADD ./binder /binder
-RUN jupyter lab workspaces export > binder/workspace.json
-
 ### password of main user is Docker!
 ### REF: https://stackoverflow.com/questions/28721699/root-password-inside-a-docker-container
 RUN echo "jovyan:Docker!" | chpasswd
@@ -37,3 +34,6 @@ WORKDIR /home/jovyan
 
 # make jupyter notebooks are trusted
 RUN jupyter trust /home/jovyan/dersnotlari/*.ipynb
+
+ADD ./binder /home/jovyan/binder
+RUN jupyter lab workspaces export > /home/jovyan/binder/workspace.json
