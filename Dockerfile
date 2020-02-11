@@ -6,13 +6,6 @@ FROM hesap/aimpy:jovyan_stable_20200211_1449
 
 MAINTAINER Mesut Karakoç <mesudkarakoc@gmail.com>
 
-# becom root to change jovyan password
-USER root
-
-### password of main user is Docker!
-### REF: https://stackoverflow.com/questions/28721699/root-password-inside-a-docker-container
-RUN echo "jovyan:Docker!" | chpasswd
-
 # jovyan user name somehow chosen by someone that i do not know, yet. kind of forced to use!
 # REF: https://mybinder.readthedocs.io/en/latest/dockerfile.html#preparing-your-dockerfile
 USER jovyan
@@ -29,11 +22,17 @@ ENV LANG en_US.UTF-8
 # working directory
 WORKDIR /home/jovyan
 
+# becom root to change jovyan password
+USER root
+
+### password of main user is Docker!
+### REF: https://stackoverflow.com/questions/28721699/root-password-inside-a-docker-container
+RUN echo "jovyan:Docker!" | chpasswd
+
 # add dersnotlari
-#USER root
 ADD ./dersnotlari /home/jovyan/dersnotlari
 RUN chown -R jovyan:jovyan /home/jovyan/dersnotlari
-#USER jovyan
+USER jovyan
 
 # make jupyter notebooks are trusted
 RUN jupyter trust /home/jovyan/dersnotlari/*.ipynb
