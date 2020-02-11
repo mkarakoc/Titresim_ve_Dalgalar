@@ -1,7 +1,7 @@
 # link of the Docker container
 # https://hub.docker.com/r/hesap/aimpy/tags/
-# FROM hesap/aimpy:jovyan_stable_latest_20181016_1758
-FROM hesap/aimpy:jovyan_stable_20200211_1142
+FROM hesap/aimpy:jovyan_stable_latest_20181016_1758
+#FROM hesap/aimpy:jovyan_stable_20200211_1142
 
 MAINTAINER Mesut Karakoç <mesudkarakoc@gmail.com>
 
@@ -23,10 +23,7 @@ ENV LD_LIBRARY_PATH "${LD_LIBRARY_PATH}:/home/jovyan/pylibs/flint2:/home/jovyan/
 # force the container to use bash
 # REF: https://stackoverflow.com/questions/33467098/how-can-the-terminal-in-jupyter-automatically-run-bash-instead-of-sh
 ENV SHELL "/bin/bash"
-#ENV LANG tr_TR.UTF-8
-#ENV LANG=en_US.UTF-8 dash 
 ENV LANG en_US.UTF-8
-#CMD ["/bin/bash"]
 
 # working directory
 WORKDIR /home/jovyan
