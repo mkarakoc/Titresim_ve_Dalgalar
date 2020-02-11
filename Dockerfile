@@ -27,8 +27,10 @@ ENV SHELL "/bin/bash"
 WORKDIR /home/jovyan
 
 # add dersnotlari
+USER root
 ADD ./dersnotlari /home/jovyan/dersnotlari
 RUN chown -R jovyan:jovyan /home/jovyan/dersnotlari
+USER jovyan
 
 # make jupyter notebooks are trusted
 RUN jupyter trust /home/jovyan/dersnotlari/*.ipynb
