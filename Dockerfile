@@ -1,6 +1,7 @@
 # link of the Docker container
 # https://hub.docker.com/r/hesap/aimpy/tags/
-FROM hesap/aimpy:jovyan_stable_latest_20181016_1758
+# FROM hesap/aimpy:jovyan_stable_latest_20181016_1758
+FROM hesap/aimpy:jovyan_stable_20200211_1142
 
 MAINTAINER Mesut Karakoç <mesudkarakoc@gmail.com>
 
