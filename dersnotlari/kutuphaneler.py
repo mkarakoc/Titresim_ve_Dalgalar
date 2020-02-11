@@ -148,7 +148,7 @@ def course_links(prevp, homep, nextp):
     &nbsp;&nbsp;&nbsp;&nbsp;
     <tr align='left'>
         <th>
-         <a href="%s" target="_blank">
+         <a href="%s" target="_blank" style="text-decoration: none;">
            <button>
            <i class="fa fa-arrow-circle-left fa-2x" style="color: firebrick ; vertical-align: middle"></i> Önceki Sayfa
            </button> 
@@ -158,21 +158,21 @@ def course_links(prevp, homep, nextp):
         <th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>    
         
         <th>
-         <a href="%s" target="_blank">
+         <a href="%s" target="_blank" style="text-decoration: none;">
            <button>
            <i class="fa fa-home fa-2x" style="color: firebrick ; vertical-align: middle"></i> Ana Sayfa
            </button> 
-         </a>
+        </a>
         </th>
         
         <th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
-        
-        <th>
-         <a href="%s" target="_blank">
+
+         <th>
+         <a href="%s" target="_blank" style="text-decoration: none;">
            <button>
            Sonraki Sayfa <i class="fa fa-arrow-circle-right fa-2x" style="color: firebrick ; vertical-align: middle"></i>
            </button>
-         </a>
+        </a>
         </th>
     </tr>
     <!-- ######################################################### -->
