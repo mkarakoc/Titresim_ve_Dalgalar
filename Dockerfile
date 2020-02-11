@@ -8,7 +8,7 @@ MAINTAINER Mesut Karakoç <mesudkarakoc@gmail.com>
 # become root to change jovyan password
 USER root
 
-RUN mkdir binder
+ADD ./binder /binder
 RUN jupyter lab workspaces export > binder/workspace.json
 
 ### password of main user is Docker!
