@@ -1,5 +1,13 @@
 # -*- coding: utf-8 -*-
 # ****************************************************
+# disable all python warnings
+# https://stackoverflow.com/questions/14463277/how-to-disable-python-warnings
+# python -W ignore foo.py
+import warnings
+warnings.filterwarnings("ignore")
+# ****************************************************
+#
+# ****************************************************
 # Titresim ve Dalgalar ders notlarının
 # Jupyter notebooklarında kullanılan ortak kütüphaneler.
 # ****************************************************
@@ -14,6 +22,11 @@ import scipy
 from scipy import integrate # scipy.integrate çalışmadığından bunu da yazdım. (13/2/2019)
 from scipy.io import wavfile
 import datetime as dt
+
+# ****************************************************
+# turn on warnings
+warnings.filterwarnings("once")
+# ****************************************************
 
 # matplotlib.colors
 # https://matplotlib.org/api/colors_api.html
