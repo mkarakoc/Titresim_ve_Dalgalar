@@ -8,6 +8,9 @@ MAINTAINER Mesut Karakoç <mesudkarakoc@gmail.com>
 # become root to change jovyan password
 USER root
 
+RUN mkdir binder
+RUN jupyter lab workspaces export > binder/workspace.json
+
 ### password of main user is Docker!
 ### REF: https://stackoverflow.com/questions/28721699/root-password-inside-a-docker-container
 RUN echo "jovyan:Docker!" | chpasswd
