@@ -35,5 +35,5 @@ WORKDIR /home/jovyan
 # make jupyter notebooks are trusted
 RUN jupyter trust /home/jovyan/dersnotlari/*.ipynb
 
-ADD ./binder /home/jovyan/binder
-RUN jupyter lab workspaces export > /home/jovyan/binder/workspace.json
+#ADD ./binder /home/jovyan/binder
+#RUN jupyter lab workspaces export > /home/jovyan/binder/workspace.json
