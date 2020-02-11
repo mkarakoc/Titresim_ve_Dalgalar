@@ -23,6 +23,8 @@ ENV LD_LIBRARY_PATH "${LD_LIBRARY_PATH}:/home/jovyan/pylibs/flint2:/home/jovyan/
 # force the container to use bash
 # REF: https://stackoverflow.com/questions/33467098/how-can-the-terminal-in-jupyter-automatically-run-bash-instead-of-sh
 ENV SHELL "/bin/bash"
+ENV LANG tr_TR.UTF-8
+CMD ["/bin/bash"]
 
 # working directory
 WORKDIR /home/jovyan
