@@ -28,6 +28,7 @@ WORKDIR /home/jovyan
 
 # add dersnotlari
 ADD ./dersnotlari /home/jovyan/dersnotlari
+RUN chown -R jovyan:jovyan /home/jovyan/
 
 # make jupyter notebooks are trusted
 RUN jupyter trust /home/jovyan/dersnotlari/*.ipynb
