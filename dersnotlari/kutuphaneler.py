@@ -25,7 +25,7 @@ import datetime as dt
 
 # ****************************************************
 # turn on warnings
-warnings.filterwarnings("once")
+# warnings.filterwarnings("once")
 # ****************************************************
 
 # matplotlib.colors
