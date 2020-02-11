@@ -1,7 +1,8 @@
 # link of the Docker container
 # https://hub.docker.com/r/hesap/aimpy/tags/
-FROM hesap/aimpy:jovyan_stable_latest_20181016_1758
-#FROM hesap/aimpy:jovyan_stable_20200211_1142
+#docker pull hesap/aimpy:jovyan_stable_20200211_1449
+FROM hesap/aimpy:jovyan_stable_20200211_1449
+
 
 MAINTAINER Mesut Karakoç <mesudkarakoc@gmail.com>
 
@@ -29,10 +30,10 @@ ENV LANG en_US.UTF-8
 WORKDIR /home/jovyan
 
 # add dersnotlari
-USER root
+#USER root
 ADD ./dersnotlari /home/jovyan/dersnotlari
 RUN chown -R jovyan:jovyan /home/jovyan/dersnotlari
-USER jovyan
+#USER jovyan
 
 # make jupyter notebooks are trusted
 RUN jupyter trust /home/jovyan/dersnotlari/*.ipynb
