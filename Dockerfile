@@ -25,7 +25,7 @@ ENV LD_LIBRARY_PATH "${LD_LIBRARY_PATH}:/home/jovyan/pylibs/flint2:/home/jovyan/
 ENV SHELL "/bin/bash"
 #ENV LANG tr_TR.UTF-8
 #ENV LANG=en_US.UTF-8 dash 
-ENV LANG=en_US.UTF-8 bash 
+ENV LANG "en_US.UTF-8 bash"
 #CMD ["/bin/bash"]
 
 # working directory
