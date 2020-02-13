@@ -34,6 +34,9 @@ ENV LANG en_US.UTF-8
 # working directory
 WORKDIR /home/jovyan
 
+# enable spesific nbextension from start
+RUN jupyter nbextension enable equation-numbering/main
+
 # make jupyter notebooks are trusted
 RUN jupyter trust /home/jovyan/dersnotlari/*.ipynb
 
