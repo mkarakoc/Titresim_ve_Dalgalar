@@ -61,7 +61,7 @@ def course_title():
     TXT = \
     ur"""
     <b>
-    <font size="6" face='bold' color="blue">TİTREŞİM ve DALGAR / FİZ220 </font> 
+    <font size="6" face='bold' color="blue">TİTREŞİM ve DALGALAR / FİZ220 </font> 
     <br><br>
     <font size="5">Doç. Dr. Mesut Karakoç </font>
     </b>
